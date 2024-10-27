@@ -79,7 +79,7 @@ const updateStudent = async (id, name, isActive) => {
         });
       }
 
-      student.name = name;
+      student.fullName = name;
       student.isActive = isActive;
 
       const updatedStudent = await student.save();
